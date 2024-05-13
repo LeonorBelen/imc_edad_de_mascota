@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMC</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Lobster&family=Pacifico&family=Poetsen+One&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</head>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: rgb(215, 228, 228);
+            background-image: url();
+        }
+        h1{
+            text-align: center;
+            font-family: "Poetsen One", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+
+        }
+        .container {
+            max-width: 500px;
+            height: 700px;
+            margin: 40px auto;
+            background-color: #c0b260;
+            padding: 20px;
+            border: 1px solid #d19d9d;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(167, 56, 56, 0.1);
+            text-align: center;
+        }
+        .container button{
+            width: 150px;
+            height: 50px;
+            color: black;
+            background-color: chocolate;
+        }
+        .container input{
+            width: 200px;
+            height: 35px;
+            background-color: rgb(170, 197, 197);
+        }
+        .container ::placeholder{
+            color: rgb(175, 83, 83);
+        }
+        
+    </style>
+</head>
+<body>
+    
+    <h1>CALCULADORA DEL INDICE DE MASA CORPORAL (IMC)</h1>
+    <header>
+    
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html"><img src="./assets/img/logo-removebg-preview (1).png" width="100px"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="IMC.html">Calcula tu (IMC)</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Calcula la edad de tu perro
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <li><a class="dropdown-item" href="años_perros.html">formula</a></li>
+                      <li><a class="dropdown-item" href="index1.html">formula del 7</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </header>
+    <div class="container">
+        <h1>Calculadora de IMC</h1>
+        <form>
+            <label for="sexo">Sexo:</label><br>
+            <select id="sexo" style="font-size: 17px;">
+                <option value="MUJER">Mujer</option>
+                <option value="HOMBRE">Hombre</option>
+            </select>
+            <br><br>
+            <label for="edad">Edad:</label><br>
+            <input type="number" id="edad" placeholder="ingrese su edad">
+            <br><br>
+            <label for="peso">Peso (kg):</label><br>
+            <input type="number" id="peso" placeholder="ingrese su peso en kilo gramos" maxlength="5">
+            <br><br>
+            <label for="altura">Altura (m):</label><br>
+            <input type="number" id="altura" placeholder="Altura en m. ej. 1.75">
+            <br><br>
+            <button type="button" onclick="calculaIMC()">Calcular IMC</button>
+            <p id="resultado"></p>
+            <img src="./assets/img/imc.webp" width="200px">
+        </form>
+    </div>
+    
+
+    <script src="./assets/java_imc/imc.js"></script>
+</body>
+</html>
+</body>
+</html>
